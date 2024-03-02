@@ -6,11 +6,11 @@
 
 ## 系統要求
 
-確保您的系統已安裝WSL並切換至Linux系統。這是因為我們的程式碼和工具更適用於Linux環境。
+確保您的系統已安裝WSL並切換至Linux系統。pyserini 套件目前只支援linux系統 請使用linux環境執行。
 
 ## 資料準備
 
-1. 請至 [KKCompany Music Challenge: Next-5 Songcraft](https://example.com) 下載原始資料，並將其放入 `datagame-2023` 資料夾中。
+1. 請至 [KKCompany Music Challenge: Next-5 Songcraft](https://www.kaggle.com/competitions/datagame-2023) 下載原始資料，並將其放入 `datagame-2023` 資料夾中。
 
 2. 使用 `code/read_to_json.py` 將資料轉換成 JSON 格式，以便進行後續的索引建構。
 
@@ -18,7 +18,7 @@
 
 ## 模型建構
 
-在這個專案中，語言向量模型的應用是為了進行音樂推薦服務。透過建立一個語言向量模型，我們可以將原始音樂數據轉換成數學表示，以便計算歌曲之間的相似度。以下是語言向量模型在這個專案中的詳細應用：
+語言向量模型的應用是為了進行音樂推薦服務。透過建立一個語言向量模型，我們可以將原始音樂數據轉換成數學表示，以便計算歌曲之間的相似度。以下是語言向量模型在這個專案中的詳細應用：
 
 1. **轉換原始數據成向量表示：** 我們利用語言向量模型將原始數據中的 `song_id`、`artist_id`、`composer_id`、`language_id`、`genre_id` 和 `session_id` 等欄位轉換為向量表示。這些向量可以捕捉到歌曲之間的相似性和關聯性。
 
